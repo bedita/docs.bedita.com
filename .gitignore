@@ -1,0 +1,10 @@
+/tmp/cache/cake_*
+/tmp/cache/models/*
+/tmp/cache/persistent/*
+/tmp/cache/views/*
+/tmp/logs/*
+/tmp/smarty/compile/*
+
+/config/core.php
+
+/webroot/index.php
