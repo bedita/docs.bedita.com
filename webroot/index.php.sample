@@ -57,13 +57,12 @@
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
 		define('CAKE_CORE_INCLUDE_PATH', ROOT. DS . "..");
 	}
-
 /**
  * The absolute path to the "BEdita" core directory bedita-app included, WITHOUT a trailing DS.
  *
  */
 	if (!defined('BEDITA_CORE_PATH')) {
-		define('BEDITA_CORE_PATH', CAKE_CORE_INCLUDE_PATH . DS . "bedita-app");
+		define('BEDITA_CORE_PATH', ROOT. DS . ".." . DS. "bedita-app");
 	}
 
 /**
@@ -94,12 +93,9 @@
 	} else {
 		 $Dispatcher=new Dispatcher();
 		 try {
-		 	$Dispatcher->dispatch($url);
+		 	$Dispatcher->dispatch();
 		} catch (Exception $ex) {
 			FrontendController::handleExceptions($ex);
 		}
-	}
-	if (Configure::read() > 0) {
-		 echo "<!-- " . round(getMicrotime() - $TIME_START, 4) . "s -->";
 	}
 ?>
