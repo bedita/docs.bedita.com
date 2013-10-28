@@ -1,7 +1,7 @@
-{if $session->flash('info')}
-
-{elseif $session->flash('error')}
-
+{if $session->check('info')}
+	{$session->flash('info')}
+{elseif $session->check('error')}
+	{$session->flash('error')}
 {/if}
 
 {if $session->read("userToChangePwd")}

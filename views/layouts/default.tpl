@@ -20,46 +20,46 @@
 	{$html->css('colorbox')}
 	<!-- /CSS -->
 
-	{$javascript->link('libs/modernizr-2.0.6.min')}
-	{$javascript->link('libs/jquery-1.7.min')}
-	{$javascript->link('libs/jquery.colorbox-min')}
-	{$javascript->link("libs/ui/ui.core.min")}
-	{$javascript->link("libs/ui/ui.draggable.min")}
+	{$html->script('libs/modernizr-2.0.6.min')}
+	{$html->script('libs/jquery-1.7.min')}
+	{$html->script('libs/jquery.colorbox-min')}
+	{$html->script("libs/ui/ui.core.min")}
+	{$html->script("libs/ui/ui.draggable.min")}
 	{if $conf->staging}
-		{$javascript->link('libs/jquery.cookie')}
+		{$html->script('libs/jquery.cookie')}
 	{/if}
 
 	{* SyntaxHighlighter *}
 	{$html->css('/syntaxhighlighter/css/shCore')}
 	{$html->css('/syntaxhighlighter/css/shThemeDefault')}
-	{$javascript->link('/syntaxhighlighter/js/shCore')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushAS3')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushBash')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushCss')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushJava')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushJScript')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushPhp')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushPlain')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushPython')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushRuby')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushSql')}
-	{$javascript->link('/syntaxhighlighter/js/shBrushXml')}
+	{$html->script('/syntaxhighlighter/js/shCore')}
+	{$html->script('/syntaxhighlighter/js/shBrushAS3')}
+	{$html->script('/syntaxhighlighter/js/shBrushBash')}
+	{$html->script('/syntaxhighlighter/js/shBrushCss')}
+	{$html->script('/syntaxhighlighter/js/shBrushJava')}
+	{$html->script('/syntaxhighlighter/js/shBrushJScript')}
+	{$html->script('/syntaxhighlighter/js/shBrushPhp')}
+	{$html->script('/syntaxhighlighter/js/shBrushPlain')}
+	{$html->script('/syntaxhighlighter/js/shBrushPython')}
+	{$html->script('/syntaxhighlighter/js/shBrushRuby')}
+	{$html->script('/syntaxhighlighter/js/shBrushSql')}
+	{$html->script('/syntaxhighlighter/js/shBrushXml')}
 
 	{* DISABLED
-		$javascript->link('/syntaxhighlighter/js/shBrushAppleScript')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushColdfusion')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushCpp')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushCSharp')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushDelphi')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushDiff')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushErlang')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushGroovy')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushJavaFX')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushPerl')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushPowerShell')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushSass')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushScala')*}
-	{*$javascript->link('/syntaxhighlighter/js/shBrushVb')
+		$html->script('/syntaxhighlighter/js/shBrushAppleScript')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushColdfusion')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushCpp')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushCSharp')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushDelphi')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushDiff')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushErlang')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushGroovy')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushJavaFX')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushPerl')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushPowerShell')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushSass')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushScala')*}
+	{*$html->script('/syntaxhighlighter/js/shBrushVb')
 	*}
 	{literal}
 	<style type="text/css" media="all">
@@ -81,7 +81,7 @@
 	{/literal}
 	{* /SyntaxHighlighter *}
 	
-	{$javascript->link('common')}
+	{$html->script('common')}
 	
 	{$beFront->feeds()}
 

@@ -18,16 +18,16 @@
 	{$html->css('common')}
 	<!-- /CSS -->
 
-	{$javascript->link('libs/modernizr-2.0.6.min')}
-	{$javascript->link('libs/jquery-1.7.min')}
-	{$javascript->link('libs/jquery.zclip.min')}
-	{$javascript->link('libs/jquery.colorbox-min')}
-	{$javascript->link("libs/ui/ui.core.min")}
-	{$javascript->link("libs/ui/ui.draggable.min")}
+	{$html->script('libs/modernizr-2.0.6.min')}
+	{$html->script('libs/jquery-1.7.min')}
+	{$html->script('libs/jquery.zclip.min')}
+	{$html->script('libs/jquery.colorbox-min')}
+	{$html->script("libs/ui/ui.core.min")}
+	{$html->script("libs/ui/ui.draggable.min")}
 	{if $conf->staging}
-		{$javascript->link('libs/jquery.cookie')}
+		{$html->script('libs/jquery.cookie')}
 	{/if}
-	{$javascript->link('common')}
+	{$html->script('common')}
 	
 	{$beFront->feeds()}
 
