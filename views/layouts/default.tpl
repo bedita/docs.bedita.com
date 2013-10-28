@@ -90,7 +90,7 @@
 </head>
 
 <body>
-{if $conf->staging}{$view->element("staging_toolbar")}{/if}
+{$beFront->stagingToolbar()}
 <div id="wrapper">
 <div id="container">
 

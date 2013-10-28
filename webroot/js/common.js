@@ -2,13 +2,6 @@
 var pageCategories = new Array();
 var baseUrl = $("meta[name='BEdita.base']").attr("content");
 
-// used for staging toolbar
-jQuery.fn.toggleText = function(a, b) {
-	return this.each(function() {
-		jQuery(this).text(jQuery(this).text() == a ? b : a);
-	});
-};
-
 jQuery(document).ready(function($){
 	// homepage.init();
 	
