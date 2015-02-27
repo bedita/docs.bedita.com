@@ -42,7 +42,7 @@ input[type=text] {
 }
 
 #container {
-	background: transparent url('../img/be-docs-tree.png') right -70px no-repeat;
+	/*background: transparent url('../img/be-docs-tree.png') right -70px no-repeat;*/
 	width: 748px;
 	padding: 0 10px;
 	margin: 0 auto;
